@@ -1,12 +1,11 @@
 package com.fjrapp.office.barvolume
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import java.lang.NumberFormatException
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() , View.OnClickListener{
     private lateinit var edtWidth: EditText
@@ -23,6 +22,8 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
         edtLength = findViewById(R.id.edt_length)
         btnCalculate = findViewById(R.id.btn_calculate)
         tvResult = findViewById(R.id.tv_result)
+
+        btnCalculate.setOnClickListener(this)
 
 
     }
